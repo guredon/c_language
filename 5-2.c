@@ -5,20 +5,26 @@
 
 int main()
 {
+	int i;
 	int vc[5];	/* 要素数が5の配列 */
 
-	vc[0] = 1;
-	vc[1] = 2;
-	vc[2] = 3;
-	vc[3] = 4;
-	vc[4] = 5;
+	for(i = 0; i < 5; i++)
+		vc[i] = i + 1;
 
-	printf("vc[0] = %d\n", vc[0]);
-	printf("vc[1] = %d\n", vc[1]);
-	printf("vc[2] = %d\n", vc[2]);
-	printf("vc[3] = %d\n", vc[3]);
-	printf("vc[4] = %d\n", vc[4]);
+	for(i = 0; i < 5; i++)
+		printf("vc[%d] = %d\n", i, vc[i]);
 
 	return 0;
 }
+
+
+/* 実行結果
+
+vc[0] = 1
+vc[1] = 2
+vc[2] = 3
+vc[3] = 4
+vc[4] = 5
+
+*/
 
